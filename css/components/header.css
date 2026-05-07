@@ -8,7 +8,7 @@
 
 .header__logo,
 .header__logo-icons {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 }
 
