@@ -1,0 +1,15 @@
+{
+	"name": "Four horses club",
+	"short_name": "Шахматный клуб",
+	"icons": [
+		{
+			"src": "assets/android-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{ "src": "assets/android-512.png", "type": "image/png", "sizes": "512x512" }
+	],
+	"theme_color": "#0b0e14",
+	"background_color": "#0b0e14",
+	"display": "standalone"
+}
