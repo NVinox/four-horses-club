@@ -1,3 +1,10 @@
 .footer__wrapper {
 	padding: 40px 0 72px;
+	background-color: var(--footer-bg);
+}
+
+.footer__text {
+	font-size: 16px;
+	line-height: 120%;
+	opacity: 60%;
 }
