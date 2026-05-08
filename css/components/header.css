@@ -1,9 +1,25 @@
+@keyframes header-bg-change {
+	from {
+		background-color: transparent;
+		backdrop-filter: blur(0px);
+	}
+	to {
+		background-color: var(--header-bg);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 10px var(--header-shadow);
+	}
+}
+
 .header__wrapper {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	padding: 25px 0;
+
+	animation: header-bg-change linear both;
+	animation-timeline: scroll();
+	animation-range: 0px 200px;
 }
 
 .header__logo,
