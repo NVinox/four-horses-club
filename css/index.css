@@ -1,3 +1,15 @@
 @import "base/reset.css";
 @import "base/fonts.css";
+@import "base/variables.css";
 @import "base/global.css";
+
+@import "components/container.css";
+@import "components/button.css";
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/hero.css";
+
+@import "media/tablet.css" screen and (min-width: 576px);
+@import "media/laptop.css" screen and (min-width: 768px);
+@import "media/desktop.css" screen and (min-width: 1024px);
+@import "media/desktop-xl.css" screen and (min-width: 1260px);
