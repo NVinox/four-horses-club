@@ -43,6 +43,18 @@
 			type="font/woff2"
 			crossorigin
 		/>
+		<link
+			rel="preload"
+			as="image"
+			href="images/hero/hero-bg-mobile.avif"
+			media="(max-width: 576px)"
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href="images/hero/hero-bg.avif"
+			media="(min-width: 577px)"
+		/>
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="icon" href="assets/favicon.svg" sizes="any" />
 		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -102,11 +114,28 @@
 		<main class="main">
 			<section class="hero hero__wrapper">
 				<picture>
+					<source
+						srcset="images/hero/hero-bg-mobile.avif"
+						media="(max-width: 576px)"
+					/>
+					<source
+						srcset="images/hero/hero-bg.avif"
+						media="(min-width: 577px)"
+					/>
+					<source
+						srcset="images/hero/hero-bg-mobile.webp"
+						media="(max-width: 576px)"
+					/>
+					<source
+						srcset="images/hero/hero-bg.webp"
+						media="(min-width: 577px)"
+					/>
 					<source srcset="images/hero/hero-bg.jpg" media="(min-width: 576px)" />
 					<img
 						class="hero__img"
 						src="images/hero/hero-bg-mobile.jpg"
 						alt="Шахматный город"
+						loading="lazy"
 					/>
 				</picture>
 				<div class="container">
