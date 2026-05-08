@@ -2,11 +2,13 @@
 	from {
 		background-color: transparent;
 		backdrop-filter: blur(0px);
+		padding: 25px 0;
 	}
 	to {
 		background-color: var(--header-bg);
 		backdrop-filter: blur(10px);
 		box-shadow: 0 2px 10px var(--header-shadow);
+		padding: 15px 0;
 	}
 }
 
@@ -15,7 +17,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 25px 0;
+	z-index: 10;
 
 	animation: header-bg-change linear both;
 	animation-timeline: scroll();
