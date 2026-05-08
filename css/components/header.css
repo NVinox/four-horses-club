@@ -13,20 +13,28 @@
 }
 
 .header__logo {
-	column-gap: 7px;
+	column-gap: 5px;
 }
 
 .header__logo-icons {
+	height: 27px;
 	column-gap: 2px;
+}
+
+.header__logo-svg {
+	display: block;
+	height: 100%;
+	width: auto;
+	fill: var(--knight-fill);
 }
 
 .header__logo-text {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	color: var(--text-grey);
-	max-width: 150px;
-	line-height: 108%;
+	max-width: 130px;
+	line-height: 100%;
 }
 
 .header__logo-text--full {
