@@ -1,0 +1,42 @@
+.container {
+	max-width: 576px;
+}
+
+.button__primary,
+.button__ghost {
+	padding: 20px 50px;
+}
+
+.header__logo-text {
+	font-size: 16px;
+	line-height: 108%;
+	max-width: 150px;
+}
+
+.header__logo {
+	column-gap: 7px;
+}
+
+.header__logo-icons {
+	height: 31px;
+}
+
+.hero__content {
+	max-width: 542px;
+}
+
+.hero__title {
+	font-size: 60px;
+}
+
+.hero__description {
+	margin-bottom: 40px;
+}
+
+.hero__buttons {
+	flex-direction: row;
+}
+
+.footer__wrapper {
+	padding: 40px 0 72px;
+}
