@@ -37,6 +37,10 @@
 	flex-direction: row;
 }
 
+.running-line__item {
+	font-size: 22px;
+}
+
 .footer__wrapper {
 	padding: 40px 0 72px;
 }
