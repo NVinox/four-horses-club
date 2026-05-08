@@ -4,8 +4,10 @@
 @import "base/global.css";
 
 @import "components/container.css";
+@import "components/button.css";
 @import "components/header.css";
 @import "components/footer.css";
+@import "components/hero.css";
 
 @import "media/tablet.css" screen and (min-width: 576px);
 @import "media/laptop.css" screen and (min-width: 768px);
