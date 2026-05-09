@@ -41,6 +41,10 @@
 	font-size: 22px;
 }
 
+.players__wrapper {
+	padding-top: 80px;
+}
+
 .footer__wrapper {
 	padding: 40px 0 72px;
 }

@@ -1,3 +1,26 @@
 .container {
 	max-width: 768px;
 }
+
+.title__secondary {
+	font-size: 30px;
+}
+
+.players__title {
+	display: block;
+}
+
+.players__content {
+	grid-template-columns: 1fr 394px;
+}
+
+.players__title-top,
+.players__title-bottom {
+	grid-column: 1;
+	order: unset;
+}
+
+.players__right {
+	grid-column: 2;
+	order: unset;
+}

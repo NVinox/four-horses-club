@@ -4,3 +4,11 @@
 	padding: 0 20px;
 	margin: 0 auto;
 }
+
+.color-red {
+	color: var(--text-red);
+}
+
+.w-700 {
+	font-weight: 700;
+}
