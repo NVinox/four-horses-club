@@ -2,6 +2,10 @@
 	max-width: 576px;
 }
 
+.text-like-link {
+	font-size: 20px;
+}
+
 .button__primary,
 .button__ghost {
 	padding: 20px 50px;

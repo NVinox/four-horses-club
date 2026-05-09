@@ -5,6 +5,12 @@
 	margin: 0 auto;
 }
 
+.text-like-link {
+	font-size: 18px;
+	color: var(--text-blue);
+	line-height: 120%;
+}
+
 .color-red {
 	color: var(--text-red);
 }
