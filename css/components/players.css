@@ -1,0 +1,38 @@
+.players__wrapper {
+	padding-top: 48px;
+}
+
+.players__content {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 24px;
+}
+
+.players__title {
+	display: contents;
+}
+
+.players__title-top {
+	order: 1;
+}
+
+.players__title-bottom {
+	order: 3;
+}
+
+.players__right {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 250px;
+	border-radius: 50%;
+	order: 2;
+}
+
+.players__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	object-position: 50% 50%;
+}

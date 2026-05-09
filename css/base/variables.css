@@ -4,6 +4,7 @@
 	--text-color: #313131;
 	--text-grey: #595653;
 	--text-red: #f54932;
+	--text-blue: #3057a2;
 
 	--running-line-bg: #f54932;
 
@@ -12,6 +13,8 @@
 	--button-dark: #1f1f1f;
 	--button-light: rgba(255, 255, 255, 0.9);
 	--button-primary-hover: #fbce51;
+
+	--border-table: #d0d0d0;
 
 	--header-bg: #fff;
 	--header-shadow: rgba(0, 0, 0, 0.1);

@@ -3,11 +3,14 @@
 @import "base/variables.css";
 @import "base/global.css";
 
-@import "components/container.css";
+@import "components/base.css";
 @import "components/button.css";
+@import "components/title.css";
+@import "components/players.css";
 @import "components/header.css";
 @import "components/footer.css";
 @import "components/hero.css";
+@import "components/game-session.css";
 @import "components/running-line.css";
 
 @import "media/tablet.css" screen and (min-width: 576px);

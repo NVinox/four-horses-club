@@ -6,3 +6,12 @@
 	box-shadow: inset 0 0 0 2px var(--button-dark);
 	background-color: transparent;
 }
+
+.title__secondary {
+	font-size: 36px;
+}
+
+.game-session__content {
+	grid-template-columns: 474px 1fr;
+	column-gap: 15px;
+}

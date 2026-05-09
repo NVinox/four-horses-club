@@ -1,0 +1,20 @@
+.container {
+	max-width: 100%;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.text-like-link {
+	font-size: 18px;
+	color: var(--text-blue);
+	line-height: 120%;
+}
+
+.color-red {
+	color: var(--text-red);
+}
+
+.w-700 {
+	font-weight: 700;
+}
