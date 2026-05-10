@@ -11,6 +11,8 @@
 	--knight-fill: #595653;
 
 	--button-dark: #1f1f1f;
+	--button-slider-bg: #313131;
+	--button-disabled: #d6d6d6;
 	--button-light: rgba(255, 255, 255, 0.9);
 	--button-primary-hover: #fbce51;
 

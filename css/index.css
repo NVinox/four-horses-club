@@ -12,6 +12,7 @@
 @import "components/hero.css";
 @import "components/game-session.css";
 @import "components/running-line.css";
+@import "components/members.css";
 
 @import "media/tablet.css" screen and (min-width: 576px);
 @import "media/laptop.css" screen and (min-width: 768px);
