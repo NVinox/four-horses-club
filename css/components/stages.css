@@ -17,21 +17,26 @@
 	color: var(--text-blue);
 }
 
-.stages__slider {
+.stages__slider-wrapper {
 	position: relative;
 	margin-bottom: 28px;
+}
+
+.stages__slider {
+	overflow: hidden;
 }
 
 .stages__bg-image {
 	position: absolute;
 	top: -160px;
 	left: 15px;
+	z-index: 1;
 }
 
 .stages__track {
 	display: flex;
 	gap: 20px;
-	overflow: hidden;
+	transition: transform var(--transition-slider) ease-in-out;
 }
 
 .stages__slide {
