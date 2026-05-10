@@ -81,6 +81,26 @@
 	transform: translate(-70%, -50%) rotate(45deg);
 }
 
+.button__dots {
+	display: flex;
+	align-items: center;
+	column-gap: 6px;
+}
+
+.button__dot {
+	width: 10px;
+	height: 10px;
+	background-color: var(--button-inactive);
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.button__dot.active {
+	background-color: var(--button-slider-bg);
+	pointer-events: none;
+}
+
 @media (hover: hover) {
 	.button__primary:hover,
 	.button-slider:hover {

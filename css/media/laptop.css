@@ -77,3 +77,7 @@
 	flex-shrink: 0;
 	width: 50%;
 }
+
+.stages__slide {
+	width: 50%;
+}

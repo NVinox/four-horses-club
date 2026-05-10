@@ -12,6 +12,11 @@ export class Slider {
 		}
 
 		this.container = document.getElementById(containerId);
+
+		if (!this.container) {
+			return;
+		}
+
 		this.track = this.container.querySelector("[data-slider-track]");
 		this.prevBtn = this.container.querySelector("[data-slider-prev]");
 		this.nextBtn = this.container.querySelector("[data-slider-next]");
