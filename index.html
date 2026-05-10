@@ -311,13 +311,13 @@
 				</div>
 			</section>
 
-			<section class="members members__wrapper">
+			<section id="members" class="members members__wrapper">
 				<div class="container">
 					<div class="members__content">
 						<h2 class="title__secondary-base">Участники турнира</h2>
 
 						<div class="members__track-wrapper">
-							<ul class="members__track">
+							<ul class="members__track" data-slider-track>
 								<li class="members__item">
 									<article class="members__card">
 										<div class="members__card-avatar">
@@ -491,15 +491,29 @@
 
 						<div class="members__controls">
 							<div class="members__slider-controls">
-								<button class="button-slider prev" aria-label="Назад"></button>
+								<button
+									class="button-slider prev"
+									aria-label="Назад"
+									data-slider-prev
+								></button>
 
 								<p class="members__slider-counter">
-									<span class="members__slider-current">1</span>
+									<span
+										class="members__slider-current"
+										data-slider-current-counter
+										>1</span
+									>
 									<span class="members__slider-delimeter">/</span>
-									<span class="members__slider-total">6</span>
+									<span class="members__slider-total" data-slider-total-counter
+										>6</span
+									>
 								</p>
 
-								<button class="button-slider next" aria-label="Вперед"></button>
+								<button
+									class="button-slider next"
+									aria-label="Вперед"
+									data-slider-next
+								></button>
 							</div>
 						</div>
 					</div>

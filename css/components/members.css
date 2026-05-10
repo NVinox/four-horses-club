@@ -33,7 +33,7 @@
 
 .members__track {
 	display: flex;
-	transition: transform var(--transition-ms) ease-in-out;
+	transition: transform var(--transition-slider) ease-in-out;
 }
 
 .members__item {
