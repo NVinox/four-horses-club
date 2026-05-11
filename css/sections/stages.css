@@ -1,0 +1,117 @@
+@keyframes fly {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.stages__wrapper {
+	padding-top: 120px;
+	overflow: hidden;
+}
+
+.stages__title-group {
+	position: relative;
+	margin-bottom: 148px;
+}
+
+.stages__title {
+	margin-bottom: 14px;
+}
+
+.stages__subtitle {
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--text-blue);
+}
+
+.stages__slider-wrapper {
+	position: relative;
+	margin-bottom: 28px;
+}
+
+.stages__slider {
+	overflow: hidden;
+}
+
+.stages__bg-image {
+	position: absolute;
+	top: -130px;
+	left: 11px;
+	z-index: 1;
+	transform: rotate(-3deg);
+	animation: fly 4s ease-in-out infinite;
+}
+
+.stages__track {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	gap: 20px;
+	transition: transform var(--transition-slider) ease-in-out;
+}
+
+.stages__slide {
+	padding: 62px 20px 33px;
+	background-image: -webkit-image-set(
+		url("../../images/stages/stage-bg.avif") 1x,
+		url("../../images/stages/stage-bg.webp") 1x,
+		url("../../images/stages/stage-bg.jpg") 1x
+	);
+	background-image: image-set(
+		url("../../images/stages/stage-bg.avif") type("image/avif"),
+		url("../../images/stages/stage-bg.webp") type("image/webp"),
+		url("../../images/stages/stage-bg.jpg") type("image/jpg")
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+	width: 100%;
+}
+
+.stages__inner-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.stages__card {
+	font-size: 18px;
+	font-weight: 600;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: flex-start;
+	column-gap: 16px;
+	line-height: 122%;
+}
+
+.stages__card-num {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	min-width: 36px;
+	padding: 7px 0;
+	border-radius: 100px;
+	background-color: var(--light);
+}
+
+.stages__slider-controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 16px;
+}

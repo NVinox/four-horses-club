@@ -1,0 +1,101 @@
+@keyframes header-bg-change {
+	from {
+		background-color: transparent;
+		backdrop-filter: blur(0px);
+		padding: 27px 0;
+	}
+	to {
+		background-color: var(--header-bg);
+		backdrop-filter: blur(10px);
+		box-shadow: 0 2px 10px var(--header-shadow);
+		padding: 15px 0;
+	}
+}
+
+.container {
+	max-width: 576px;
+}
+
+.text-like-link {
+	font-size: 20px;
+}
+
+.button__primary,
+.button__ghost {
+	padding: 20px 50px;
+}
+
+.button-slider {
+	width: 44px;
+	height: 44px;
+}
+
+.header__logo-text {
+	font-size: 16px;
+	line-height: 108%;
+	max-width: 150px;
+}
+
+.header__logo {
+	column-gap: 7px;
+}
+
+.header__logo-icons {
+	height: 31px;
+}
+
+.hero__content {
+	max-width: 542px;
+}
+
+.hero__title {
+	font-size: 60px;
+}
+
+.hero__title--center {
+	display: block;
+	text-align: center;
+}
+
+.hero__description {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.hero__buttons {
+	flex-direction: row;
+}
+
+.running-line__item {
+	font-size: 22px;
+	padding: 20px 12px 20px 18px;
+}
+
+.players__wrapper {
+	padding-top: 80px;
+}
+
+.players__title {
+	max-width: 764px;
+	margin-top: 30px;
+}
+
+.players__title-bottom {
+	margin-top: 0;
+}
+
+.players__right {
+	height: 250px;
+}
+
+.players__image {
+	top: -42px;
+}
+
+.members__card {
+	padding: 0 25px;
+}
+
+.footer__wrapper {
+	padding: 40px 0 72px;
+}

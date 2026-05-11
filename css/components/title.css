@@ -1,0 +1,16 @@
+.title__secondary,
+.title__secondary-base {
+	font-family: "Merriweather", serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.title__secondary {
+	font-size: 25px;
+	line-height: 135%;
+}
+
+.title__secondary-base {
+	font-size: 25px;
+	line-height: 110%;
+}
