@@ -92,6 +92,10 @@
 	top: -42px;
 }
 
+.members__card {
+	padding: 0 25px;
+}
+
 .footer__wrapper {
 	padding: 40px 0 72px;
 }

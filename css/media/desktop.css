@@ -55,7 +55,7 @@
 }
 
 .members__wrapper {
-	padding: 200px 0 140px;
+	padding: 177px 0 140px;
 }
 
 .members__content {
@@ -75,6 +75,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: end;
+}
+
+.members__card {
+	padding: 0;
 }
 
 .members__item {
