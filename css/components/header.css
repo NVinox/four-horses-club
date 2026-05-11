@@ -18,10 +18,19 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
+	padding: 20px 0;
+	transition:
+		padding var(--transition-ms) ease-in-out,
+		backdrop-filter var(--transition-ms) ease-in-out,
+		box-shadow var(--transition-ms) ease-in-out,
+		background-color var(--transition-ms) ease-in-out;
+}
 
-	animation: header-bg-change linear both;
-	animation-timeline: scroll();
-	animation-range: 0px 200px;
+.header__wrapper.header--scrolled {
+	background-color: var(--header-bg);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 2px 10px var(--header-shadow);
+	padding: 15px 0;
 }
 
 .header__logo,
@@ -57,4 +66,12 @@
 
 .header__logo-text--full {
 	display: block;
+}
+
+@supports (animation-timeline: scroll()) {
+	.header__wrapper {
+		animation: header-bg-change linear both;
+		animation-timeline: scroll();
+		animation-range: 0px 200px;
+	}
 }
