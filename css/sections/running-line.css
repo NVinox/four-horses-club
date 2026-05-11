@@ -1,19 +1,38 @@
 @keyframes scroll-line {
 	from {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 	to {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes scroll-line {
+	from {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+	to {
+		-webkit-transform: translateX(-100%);
 		transform: translateX(-100%);
 	}
 }
 
 .running-line__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	overflow: hidden;
 	background-color: var(--running-line-bg);
 }
 
 .running-line__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	animation: scroll-line 30s linear infinite;
@@ -34,6 +53,7 @@
 	position: absolute;
 	top: 50%;
 	left: 0;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 6px;
 	height: 6px;

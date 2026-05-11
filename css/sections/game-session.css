@@ -55,6 +55,7 @@
 	width: 60%;
 	bottom: -80px;
 	right: -30px;
+	-webkit-transform: rotate(-55deg);
 	transform: rotate(-55deg);
 }
 
@@ -63,6 +64,7 @@
 	width: 21%;
 	bottom: -40px;
 	left: 77px;
+	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 

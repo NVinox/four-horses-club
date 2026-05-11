@@ -1,6 +1,9 @@
 body {
 	font-family: "GolosText", sans-serif;
 	font-weight: 400;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	line-height: 110%;
 	flex-direction: column;

@@ -31,6 +31,9 @@
 }
 
 .members__controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: end;
@@ -69,6 +72,11 @@
 }
 
 .stages__card {
+	background-image: -webkit-image-set(
+		url("../../images/stages/stage-bg.avif") 1x,
+		url("../../images/stages/stage-bg.webp") 1x,
+		url("../../images/stages/stage-bg.jpg") 1x
+	);
 	background-image: image-set(
 		url("../../images/stages/stage-bg.avif") type("image/avif"),
 		url("../../images/stages/stage-bg.webp") type("image/webp"),

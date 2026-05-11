@@ -8,6 +8,9 @@
 }
 
 .members__slider-controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -32,6 +35,9 @@
 }
 
 .members__track {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	transition: transform var(--transition-slider) ease-in-out;
 }
@@ -42,6 +48,9 @@
 }
 
 .members__card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -84,6 +93,9 @@
 }
 
 .members__card-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: center;
 	margin-top: auto;
