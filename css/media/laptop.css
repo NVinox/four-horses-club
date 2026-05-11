@@ -79,6 +79,10 @@
 	width: 50%;
 }
 
+.stages__wrapper {
+	padding-top: 205px;
+}
+
 .stages__slide {
 	width: 50%;
 }
