@@ -16,6 +16,7 @@
 @import "sections/members.css";
 @import "sections/players.css";
 
+@import "media/phone.css" screen and (min-width: 375px);
 @import "media/tablet.css" screen and (min-width: 576px);
 @import "media/laptop.css" screen and (min-width: 768px);
 @import "media/desktop.css" screen and (min-width: 1024px);

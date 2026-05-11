@@ -59,9 +59,8 @@
 
 .members__card-avatar {
 	position: relative;
-	width: 100%;
+	width: 244px;
 	height: 244px;
-	max-width: 244px;
 	border-radius: 50%;
 	margin: 0 auto;
 	overflow: hidden;
