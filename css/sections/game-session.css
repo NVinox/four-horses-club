@@ -1,3 +1,15 @@
+@keyframes blink-scale {
+	0% {
+		transform: scale(0.75);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.75);
+	}
+}
+
 .game-session__wrapper {
 	padding-top: 70px;
 	overflow: hidden;
@@ -9,61 +21,66 @@
 
 .game-session__title {
 	order: 2;
-	margin-bottom: 28px;
+	margin-bottom: 45px;
 }
 
 .game-session__image-wrapper {
 	position: relative;
 	max-width: 406px;
+	padding: 11px 32px 20px 15px;
 }
 
 .game-session__image {
 	order: 1;
-	margin: 0 auto 75px;
+	margin: 0 auto 50px;
 }
 
 .game-session__player {
 	position: absolute;
-	width: 80%;
-	top: 48px;
+	width: 71.5%;
+	top: 45px;
 	left: 54px;
 }
 
 .game-session__cash {
 	position: absolute;
-	width: 30%;
-	right: -46px;
-	top: -17px;
+	width: 26%;
+	right: 0;
+	top: 0;
 }
 
 .game-session__blink-large {
 	position: absolute;
-	width: 130%;
-	top: -67px;
-	left: -50px;
+	width: 113%;
+	top: -84px;
+	left: -20px;
+	animation: blink-scale 2s ease-in-out infinite;
 }
 
 .game-session__blink-small {
 	position: absolute;
-	width: 60%;
-	left: -38px;
-	bottom: -36px;
+	width: 50%;
+	left: -7px;
+	bottom: -38px;
+	animation: blink-scale 2s ease-in-out infinite;
 }
 
 .game-session__hand {
 	position: absolute;
-	width: 60%;
-	bottom: -80px;
-	right: -30px;
-	transform: rotate(-55deg);
+	width: 50%;
+	bottom: -44px;
+	right: 10px;
+	-webkit-transform: rotate(-49deg);
+	transform: rotate(-49deg);
 }
 
 .game-session__knight {
 	position: absolute;
-	width: 21%;
-	bottom: -40px;
-	left: 77px;
-	transform: rotate(-45deg);
+	width: 18.2%;
+	bottom: -5px;
+	left: 70px;
+	-webkit-transform: rotate(-35deg);
+	transform: rotate(-35deg);
 }
 
 .game-session__table {
@@ -74,7 +91,7 @@
 .game-session__row {
 	display: grid;
 	grid-template-columns: 1fr;
-	padding: 16px 0;
+	padding: 15px 0;
 	border-bottom: 2px solid var(--border-table);
 	row-gap: 12px;
 }

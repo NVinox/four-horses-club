@@ -11,13 +11,51 @@
 	font-size: 36px;
 }
 
+.game-session__title {
+	margin-top: -3px;
+}
+
 .game-session__content {
 	grid-template-columns: 474px 1fr;
-	column-gap: 15px;
+	column-gap: 44px;
+}
+
+.game-session__image-wrapper {
+	max-width: 100%;
+	padding: 34px 10px 10px 20px;
+}
+
+.game-session__player {
+	top: 82px;
+	left: 74px;
+}
+
+.game-session__cash {
+	top: 16px;
+}
+
+.game-session__blink-large {
+	top: -32px;
+	left: -30px;
+}
+
+.game-session__blink-small {
+	left: -10px;
+	bottom: -28px;
+}
+
+.game-session__knight {
+	bottom: -30px;
+	left: 97px;
+}
+
+.game-session__hand {
+	bottom: -80px;
+	right: 20px;
 }
 
 .members__wrapper {
-	padding: 200px 0 140px;
+	padding: 177px 0 140px;
 }
 
 .members__content {
@@ -31,9 +69,16 @@
 }
 
 .members__controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	justify-content: end;
+}
+
+.members__card {
+	padding: 0;
 }
 
 .members__item {
@@ -42,7 +87,7 @@
 }
 
 .stages__title-group {
-	margin-bottom: 54px;
+	margin-bottom: 62px;
 }
 
 .stages__title {
@@ -50,9 +95,10 @@
 }
 
 .stages__subtitle {
+	font-size: 20px;
 	position: absolute;
-	bottom: 10px;
-	left: 290px;
+	bottom: 3px;
+	left: 300px;
 	max-width: 280px;
 }
 
@@ -66,9 +112,16 @@
 	left: auto;
 	bottom: 0;
 	right: -62px;
+	transform: rotate(0);
 }
 
 .stages__card {
+	font-size: 20px;
+	background-image: -webkit-image-set(
+		url("../../images/stages/stage-bg.avif") 1x,
+		url("../../images/stages/stage-bg.webp") 1x,
+		url("../../images/stages/stage-bg.jpg") 1x
+	);
 	background-image: image-set(
 		url("../../images/stages/stage-bg.avif") type("image/avif"),
 		url("../../images/stages/stage-bg.webp") type("image/webp"),
@@ -76,7 +129,7 @@
 	);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 20px;
+	padding: 19px 20px;
 }
 
 .stages__card.row-2 {

@@ -1,4 +1,5 @@
 .button {
+	text-align: center;
 	font-weight: 500;
 	background-color: transparent;
 	border: none;
@@ -13,7 +14,7 @@
 .button__primary,
 .button__ghost {
 	tab-size: 16px;
-	padding: 18px 43px;
+	padding: 15px 43px;
 	flex: 1;
 }
 
@@ -74,14 +75,19 @@
 }
 
 .button-slider.prev::before {
+	-webkit-transform: translate(-30%, -50%) rotate(-135deg);
 	transform: translate(-30%, -50%) rotate(-135deg);
 }
 
 .button-slider.next::before {
+	-webkit-transform: translate(-70%, -50%) rotate(45deg);
 	transform: translate(-70%, -50%) rotate(45deg);
 }
 
 .button__dots {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	align-items: center;
 	column-gap: 6px;

@@ -2,7 +2,7 @@
 	from {
 		background-color: transparent;
 		backdrop-filter: blur(0px);
-		padding: 25px 0;
+		padding: 20px 0;
 	}
 	to {
 		background-color: var(--header-bg);
