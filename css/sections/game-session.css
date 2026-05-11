@@ -1,3 +1,15 @@
+@keyframes blink-scale {
+	0% {
+		transform: scale(0.75);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.75);
+	}
+}
+
 .game-session__wrapper {
 	padding-top: 70px;
 	overflow: hidden;
@@ -42,6 +54,7 @@
 	width: 113%;
 	top: -84px;
 	left: -20px;
+	animation: blink-scale 2s ease-in-out infinite;
 }
 
 .game-session__blink-small {
@@ -49,6 +62,7 @@
 	width: 50%;
 	left: -7px;
 	bottom: -38px;
+	animation: blink-scale 2s ease-in-out infinite;
 }
 
 .game-session__hand {
