@@ -80,6 +80,10 @@
 	margin-top: 30px;
 }
 
+.players__title-bottom {
+	margin-top: 0;
+}
+
 .players__right {
 	height: 250px;
 }

@@ -11,9 +11,47 @@
 	font-size: 36px;
 }
 
+.game-session__title {
+	margin-top: -3px;
+}
+
 .game-session__content {
 	grid-template-columns: 474px 1fr;
-	column-gap: 15px;
+	column-gap: 44px;
+}
+
+.game-session__image-wrapper {
+	max-width: 100%;
+	padding: 34px 10px 10px 20px;
+}
+
+.game-session__player {
+	top: 82px;
+	left: 74px;
+}
+
+.game-session__cash {
+	top: 16px;
+}
+
+.game-session__blink-large {
+	top: -32px;
+	left: -30px;
+}
+
+.game-session__blink-small {
+	left: -10px;
+	bottom: -28px;
+}
+
+.game-session__knight {
+	bottom: -30px;
+	left: 97px;
+}
+
+.game-session__hand {
+	bottom: -80px;
+	right: 20px;
 }
 
 .members__wrapper {

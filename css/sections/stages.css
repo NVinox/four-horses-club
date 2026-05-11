@@ -1,5 +1,6 @@
 .stages__wrapper {
 	padding-top: 150px;
+	overflow: hidden;
 }
 
 .stages__title-group {
