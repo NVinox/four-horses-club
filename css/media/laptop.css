@@ -1,3 +1,83 @@
 .container {
 	max-width: 768px;
 }
+
+.title__secondary {
+	font-size: 30px;
+}
+
+.title__secondary-base {
+	font-size: 54px;
+}
+
+.players__title {
+	display: block;
+}
+
+.players__content {
+	grid-template-columns: 1fr 394px;
+}
+
+.players__title-top,
+.players__title-bottom {
+	grid-column: 1;
+	order: unset;
+}
+
+.players__right {
+	grid-column: 2;
+	order: unset;
+}
+
+.game-session__content {
+	grid-template-columns: 1fr 1fr;
+	column-gap: 60px;
+}
+
+.game-session__title {
+	margin-bottom: 60px;
+}
+
+.game-session__image {
+	grid-row: 1 / 4;
+	margin: 0;
+}
+
+.game-session__table {
+	margin-bottom: 48px;
+}
+
+.game-session__row,
+.game-session__row--inline {
+	position: relative;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 0;
+}
+
+.game-session__label {
+	padding-right: 20px;
+}
+
+.game-session__row::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 2px;
+	background-color: var(--border-table);
+	transform: translateX(-50%);
+}
+
+.game-session__value {
+	padding-left: 20px;
+}
+
+.members__item {
+	flex-shrink: 0;
+	width: 50%;
+}
+
+.stages__slide {
+	width: 50%;
+}
