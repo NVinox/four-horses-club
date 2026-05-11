@@ -6,3 +6,12 @@
 	width: 320px;
 	height: 320px;
 }
+
+.game-session__row,
+.game-session__row--inline {
+	grid-template-columns: 300px 1fr;
+}
+
+.game-session__row::before {
+	left: 305px;
+}

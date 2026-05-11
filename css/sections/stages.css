@@ -1,5 +1,6 @@
 .stages__wrapper {
-	padding-top: 150px;
+	padding-top: 120px;
+	overflow: hidden;
 }
 
 .stages__title-group {
@@ -8,7 +9,7 @@
 }
 
 .stages__title {
-	margin-bottom: 12px;
+	margin-bottom: 14px;
 }
 
 .stages__subtitle {
@@ -28,9 +29,10 @@
 
 .stages__bg-image {
 	position: absolute;
-	top: -160px;
-	left: 15px;
+	top: -130px;
+	left: 11px;
 	z-index: 1;
+	transform: rotate(-3deg);
 }
 
 .stages__track {
@@ -43,7 +45,7 @@
 }
 
 .stages__slide {
-	padding: 62px 20px;
+	padding: 62px 20px 33px;
 	background-image: -webkit-image-set(
 		url("../../images/stages/stage-bg.avif") 1x,
 		url("../../images/stages/stage-bg.webp") 1x,
@@ -66,18 +68,19 @@
 	display: -webkit-flex;
 	display: flex;
 	flex-direction: column;
-	row-gap: 28px;
+	row-gap: 30px;
 }
 
 .stages__card {
 	font-size: 18px;
+	font-weight: 600;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	align-items: flex-start;
 	column-gap: 16px;
-	line-height: 120%;
+	line-height: 122%;
 }
 
 .stages__card-num {

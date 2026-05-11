@@ -55,7 +55,7 @@
 }
 
 .game-session__label {
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .game-session__row::before {
@@ -77,6 +77,10 @@
 .members__item {
 	flex-shrink: 0;
 	width: 50%;
+}
+
+.stages__wrapper {
+	padding-top: 205px;
 }
 
 .stages__slide {

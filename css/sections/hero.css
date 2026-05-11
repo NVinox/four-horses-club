@@ -5,7 +5,7 @@
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
-	padding: 80px 0 40px;
+	padding: 70px 0 40px;
 	min-height: 100vh;
 	height: auto;
 }
@@ -29,7 +29,7 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 110%;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 	text-transform: uppercase;
 }
 
@@ -40,7 +40,8 @@
 
 .hero__description {
 	font-size: 18px;
-	margin-bottom: 32px;
+	line-height: 127%;
+	margin-bottom: 33px;
 }
 
 .hero__buttons {
