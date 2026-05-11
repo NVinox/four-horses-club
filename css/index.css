@@ -6,15 +6,17 @@
 @import "components/base.css";
 @import "components/button.css";
 @import "components/title.css";
-@import "components/players.css";
 @import "components/header.css";
 @import "components/footer.css";
-@import "components/hero.css";
-@import "components/game-session.css";
-@import "components/running-line.css";
-@import "components/members.css";
-@import "components/stages.css";
 
+@import "sections/hero.css";
+@import "sections/running-line.css";
+@import "sections/game-session.css";
+@import "sections/stages.css";
+@import "sections/members.css";
+@import "sections/players.css";
+
+@import "media/phone.css" screen and (min-width: 375px);
 @import "media/tablet.css" screen and (min-width: 576px);
 @import "media/laptop.css" screen and (min-width: 768px);
 @import "media/desktop.css" screen and (min-width: 1024px);

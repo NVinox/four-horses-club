@@ -1,3 +1,8 @@
 .container {
 	max-width: 1260px;
 }
+
+.members__card-avatar {
+	width: 320px;
+	height: 320px;
+}
