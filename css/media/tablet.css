@@ -68,10 +68,24 @@
 
 .running-line__item {
 	font-size: 22px;
+	padding: 20px 12px 20px 18px;
 }
 
 .players__wrapper {
 	padding-top: 80px;
+}
+
+.players__title {
+	max-width: 764px;
+	margin-top: 30px;
+}
+
+.players__right {
+	height: 250px;
+}
+
+.players__image {
+	top: -42px;
 }
 
 .footer__wrapper {
