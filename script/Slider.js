@@ -1,8 +1,10 @@
-import { DESKTOP, LAPTOP } from "./constants.js";
+import { DESKTOP, LAPTOP, SWIPE_THRESHOLD } from "./constants.js";
 
 export class Slider {
 	currentIndex = 0;
 	autoPlayInterval = null;
+	resizeObserver = null;
+	xDownStart = null;
 
 	timeout = 4000;
 
@@ -12,6 +14,11 @@ export class Slider {
 		}
 
 		this.container = document.getElementById(containerId);
+
+		if (!this.container) {
+			return;
+		}
+
 		this.track = this.container.querySelector("[data-slider-track]");
 		this.prevBtn = this.container.querySelector("[data-slider-prev]");
 		this.nextBtn = this.container.querySelector("[data-slider-next]");
@@ -27,9 +34,16 @@ export class Slider {
 	}
 
 	init() {
-		if (!this.container) return;
+		if (!this.container) {
+			return;
+		}
 
-		this.update();
+		this.resizeObserver = new ResizeObserver(() => {
+			this.update();
+			this.resetAutoPlay();
+		});
+
+		this.resizeObserver.observe(this.container);
 		this.startAutoPlay();
 
 		this.prevBtn.addEventListener("click", () => {
@@ -41,6 +55,23 @@ export class Slider {
 			this.next();
 			this.resetAutoPlay();
 		});
+
+		this.track.addEventListener(
+			"touchstart",
+			(e) => {
+				this.resetAutoPlay();
+				this.touchStart(e);
+			},
+			false,
+		);
+		this.track.addEventListener(
+			"touchend",
+			(e) => {
+				this.resetAutoPlay();
+				this.touchEnd(e);
+			},
+			false,
+		);
 	}
 
 	getSlidesPerView() {
@@ -55,6 +86,27 @@ export class Slider {
 		}
 
 		return 1;
+	}
+
+	touchStart(e) {
+		this.xDownStart = e.touches[0].clientX;
+	}
+
+	touchEnd(e) {
+		if (!this.xDownStart) return;
+
+		const xUp = e.changedTouches[0].clientX;
+		const diff = this.xDownStart - xUp;
+
+		if (Math.abs(diff) > SWIPE_THRESHOLD) {
+			if (diff > 0) {
+				this.next();
+			} else {
+				this.prev();
+			}
+		}
+
+		this.xDownStart = null;
 	}
 
 	update() {
